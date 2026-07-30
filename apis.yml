@@ -1,7 +1,25 @@
 aid: matcherino
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/matcherino.png
 name: Matcherino
-description: Matcherino is a company surfaced as a portfolio company of techstars and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Matcherino is an esports crowdfunding and tournament-management platform that provides
+  monetization infrastructure for competitive gaming events of every scale, from college clubs to
+  stadium finals. Its stack covers prize-pool crowdfunding, brackets, player signups, ticketing and
+  entry fees, streaming overlays, sponsor activation, and a publisher dashboard for distributing cash
+  and in-game prizes. Matcherino handles global payouts to organizers and winners across 120+ countries
+  with tax-form collection, and surfaces real-time analytics for organizers, sponsors, and publishers.
+  The company reports having paid out more than $5.2M across 14,000+ tournaments. Matcherino is a
+  Techstars-backed company; it does not currently publish a public API or developer platform.
 url: https://raw.githubusercontent.com/api-evangelist/matcherino/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Esports
+- Gaming
+- Tournaments
+- Crowdfunding
+- Payments
+- Payouts
+- Sponsorship
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +46,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/matcherino-domain-security.yml
 - type: Website
   url: https://matcherino.com/
+- type: Login
+  url: https://matcherino.com/login
+- type: TermsOfService
+  url: https://matcherino.com/terms
+- type: PrivacyPolicy
+  url: https://matcherino.com/Privacy%20Policy/
+- type: Support
+  url: https://intercom.help/matcherino/en/collections/208783-matcherino-platform-faq
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
